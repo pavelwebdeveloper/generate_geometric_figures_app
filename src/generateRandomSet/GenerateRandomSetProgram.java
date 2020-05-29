@@ -33,8 +33,6 @@ public class GenerateRandomSetProgram extends JPanel {
 	 */
 	public void paint(Graphics g) {
 	
-	Object[] objects = {new Square(), new Triangle(), new Circle(), new Trapezoid()};
-	
 	// Create a list to store geometric objects
 		ArrayList<GeometricObject> geometricObjectsForRandomList = new ArrayList<GeometricObject>();
 		
@@ -49,20 +47,13 @@ public class GenerateRandomSetProgram extends JPanel {
 	Graphics2D g2 = (Graphics2D) g;
 	super.paintComponent( g ); // call superclass's paintComponent
 	   //custom color
-	//custom color
 	   Color c1 = new Color(0, 0, 0);
 	   Color c2 = new Color(255, 255, 0);
 	   Color c3 = new Color(0, 0, 139);
 	   Color c4 = new Color(255, 0, 0);
 	   Color c5 = new Color(0, 128, 0);
 	
-	   /*
-	List<Object> objList = Arrays.asList(objects);
-
-	Collections.shuffle(objList);
-
-	objList.toArray(objects);
-	*/
+	   
 	
 	// Create a list to store geometric objects
 	ArrayList<GeometricObject> geometricObjects = new ArrayList<GeometricObject>();
